@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin:0 auto;
+    text-align: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Navigation */
+
+.nav-container {
+    background: #FFFFFF;
+    height: 71px;
+    position: fixed;
+    width: 100%;
+    z-index: +1;
+}
+
+.filler {
+    width: 100%;
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #D3D3D3;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: max-width;
+}
+
+.nav-items li a {
+    color: #D3D3D3;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+/* First Header Block */
+.header-container {
+    background: #4A4E69;
+    height: 428px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+/* Second Header Block */
+.second-container {
+    background: #9A8C98;
+    height: 428px;
+    display: flex;
+    align-items: center;
+}
+header h2 {
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+header a {
+    font-size: 30px;
+    color: #D3D3D3;
+    text-decoration: none;
+
+    background: #F5F3F4;
+    padding: 16px 48px;
+    display: inline;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+
+/* Search Box */
+.search-box {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 0;
+    transition: 300ms;
+}
+
+.search-box.active {
+    top: 72px;
+}
+
+.search-box input {
+    background: #F5F3F4;
+    width: 640px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 37px;
+    border: 0;
+    padding: 12px 12px;
+}
+
+.search-box input::placeholder {
+    color: #D3D3D3;
+    text-align: left;
+}
+
+.search-button {
+    position: relative;
+    left: -29px;
+    vertical-align: top;
+    height: 40px;
+    border: 2px;
+    background: #F5F3F4;
+    color: #D3D3D3;
+}
+
+/* University Page */
+header h3 {
+    color: #FFFFFF;
+    font-size: 100px;
+}
+
+form {
+    color: #D3D3D3;
+    font-size: 30px;
+    padding: 16px 48px;
+}
+
+.drop-down {
+    color: #D3D3D3;
+    font-size: 30px;
+    border-color: #D3D3D3;
+}
+
+
+.uni-search {
+    font-size: 30px;
+    color: #D3D3D3;
+    text-decoration: none;
+    border: 0px;
+    background: #F5F3F4;
+    padding: 16px 48px;
+    display: inline;
+    transition: 300ms;
+}
+
+/* University Results Page */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 30px;
+    color: #D3D3D3;
+}
+
+.back {
+    font-size: 30px;
+    color: #D3D3D3;
+    text-decoration: none;
+
+    background: #F5F3F4;
+    padding: 16px 48px;
+    transition: 300ms;
+    margin-top: 200px;
+}
+
+
+
+/*More information*/
+.collapsible {
+  background-color: #F5F3F4;
+  color: #D3D3D3;
+  cursor: pointer;
+  padding: 18px;
+  padding: 16px 48px;
+  transition: 300ms;
+  margin-top: 200px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}

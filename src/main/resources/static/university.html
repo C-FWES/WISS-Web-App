@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    &nbsp;&nbsp;WISS
+                </div>
+                <div class="filler">
+
+                </div>
+                <div>
+                    <ul class="nav-items">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="university.html">University</a>
+                        </li>
+
+                        <li>
+                            <a href="courses.html">Courses</a>
+                        </li>
+
+                        <li>
+                            <a href="resources.html">Resources</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="info-containers">
+    <div class="header-container">
+        <div class="wrapper">
+            <header>
+                <div class="hero-content">
+                    <h3>University Programs</h3>
+                </div>
+            </header>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="filter-options">
+    <form action="/university-results">
+        <label for="program" class="menu">Program:</label>
+        <select class="drop-down" name="program" id="program">
+          <option value="all">All</option>
+          <option value="Mathematics & Business">Mathematics and Business</option>
+          <option value="Business">Business</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Arts">Arts</option>
+            <option value="1">Architecture</option>
+            <option value="2">Biological Sciences</option>
+            <option value="4">Education</option>
+            <option value="6">Medicine and Related Subjects</option>
+            <option value="6">Agriculture Sciences</option>
+            <option value="6">Historical and Philosophical Studies</option>
+            <option value="6">Interdisciplinary Studies</option>
+            <option value="6">Languages, Linguistics, Literatures, Cultures and Societies</option>
+            <option value="6">Mass Communications and Documentations</option>
+            <option value="6">Mathematics</option>
+            <option value="6">Physical Sciences</option>
+            <option value="6">Social Sciences</option>
+            <option value="6">Technologies and Materials</option>
+        </select>
+        <br><br>
+
+        <label for="program-rank" class="menu">Program Rank:</label>
+        <select class="drop-down" name="program_rank" id="progrank">
+            <option value="all">All</option>
+            <option value="1">1-5</option>
+            <option value="2">6-10</option>
+            <option value="3">11-15</option>
+            <option value="4">16-20</option>
+            <option value="5">21-25</option>
+            <option value="6">26-30</option>
+        </select>
+        <br><br>
+
+        <label for="university" class="menu">University:</label>
+        <select class="drop-down" name="uni" id="uni">
+          <option value="all">All</option>
+          <option value="University of Waterloo">University of Waterloo</option>
+          <option value="Wilfrid Laurier University">Wilfrid Laurier University</option>
+          <option value="University of Toronto">University of Toronto</option>
+            <option value="University of Guelph">University of Guelph</option>
+            <option value="Ryerson University">Ryerson University</option>
+            <option value="1">Algoma University</option>
+            <option value="2">Brock University</option>
+            <option value="3">Carleton University</option>
+            <option value="5">Laurentian University</option>
+            <option value="6">McMaster University</option>
+            <option value="7">Nipissing University</option>
+            <option value="7">Universite de Hearst</option>
+            <option value="7">Lakehead University</option>
+            <option value="7">McMaster University</option>
+            <option value="7">OCAD University</option>
+            <option value="7">Universite de l'Ontario</option>
+            <option value="7">Ontario Tech</option>
+            <option value="7">University of Ottawa</option>
+            <option value="7">Queen's University</option>
+            <option value="7">Royal Military College</option>
+            <option value="7">Trent University</option>
+            <option value="7">Western University</option>
+            <option value="7">University of Windsor</option>
+            <option value="7">York University</option>
+        </select>
+        <br><br>
+
+        <label for="university-rank" class="menu">University Rank:</label>
+        <select class="drop-down" name="universityrank" id="unirank">
+            <option value="all">All</option>
+            <option value="1">1-5</option>
+            <option value="2">6-10</option>
+            <option value="3">11-15</option>
+            <option value="4">16-20</option>
+            <option value="5">21-25</option>
+            <option value="6">26-30</option>
+        </select>
+        <br><br>
+
+        <label for="location" class="menu">Location:</label>
+        <select class="drop-down" name="location" id="location">
+          <option value="all">All</option>
+          <option value="Waterloo">Waterloo</option>
+          <option value="Toronto">Toronto</option>
+            <option value="Guelph">Guelph</option>
+            <option value="1">Nipissing</option>
+            <option value="1">Simcoe</option>
+            <option value="1">Muskoka</option>
+            <option value="1">Niagara</option>
+            <option value="1">Hamilton</option>
+            <option value="1">Peterborough</option>
+            <option value="1">Windsor</option>
+            <option value="1">Parry Sound</option>
+            <option value="1">Manitoulin</option>
+        </select>
+        <br><br>
+
+        <label for="tuition-fee" class="menu">Tuition Fee:</label>
+        <select class="drop-down" name="tuitionfee" id="tuitionfee">
+            <option value="all">All</option>
+            <option value="1">$5000-$7999</option>
+            <option value="2">$8000-$11999</option>
+            <option value="3">$12000-$14999</option>
+            <option value="4">>$15000</option>
+        </select>
+        <br><br>
+
+
+        <input type="hidden" name="orderBy" value="desc"></input>
+
+<!--        <a class= "uni-search" href="university-results.html">-->
+<!--            Search-->
+<!--        </a>-->
+        <button type="submit" class="uni-search">
+            Search
+        </button>
+      </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+insert into university (name, city) values ('U of Waterloo', 'Waterloo');
+insert into university (name, city) values ('U of Toronto', 'Toronto');
+insert into university (name, city) values ('McMaster', 'Hamilton');
+select * from university u ;
+
+insert into majors (name, admission_score, careers, university_id) values ('Math', 95, 'Professor, Scientist', 1);
+insert into majors (name, admission_score, careers, university_id) values ('Computer Science', 90, 'Computer Scientist, Software Engineer', 1);
+insert into majors (name, admission_score, careers, university_id) values ('Life Science', 98, 'Doctor, Nurse', 2);
+insert into majors (name, admission_score, careers, university_id) values ('Health Science', 91, 'Doctor, Nurse', 2);
+insert into majors (name, admission_score, careers, university_id) values ('Electronic Engineering', 88, 'Enginner, Aviation Engineer', 3);
+insert into majors (name, admission_score, careers, university_id) values ('Business', 93, 'Businessperson, Enterpreneur, Banker', 3);

@@ -1,0 +1,13 @@
+CREATE TABLE public.majors (
+	id serial NOT NULL,
+	"Name" varchar NULL,
+	admission_score int NULL,
+	careers varchar NULL,
+	university_id int NOT NULL,
+	CONSTRAINT majors_pk PRIMARY KEY (id)
+);
+
+ALTER TABLE public.majors ALTER COLUMN admission_score TYPE int USING admission_score::int;
+ALTER TABLE public.majors ALTER COLUMN university_id TYPE int USING university_id::int;
+
+

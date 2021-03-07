@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin:0 auto;
+    text-align: center;
+}
+
+body {
+    font-family: serif;
+}
+
+/* Navigation */
+
+.nav-container {
+    background: #000000;
+    height: 71px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.filler {
+    width: 100%;
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: max-width;
+}
+
+.nav-items li a {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* First Header Block */
+.header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/6147276/pexels-photo-6147276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    height: 428px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+/*middle space*/
+.middle-space {
+    background-color: #ffffff;
+    height: 240px;
+}
+
+h4 {
+    font-size: 30px;
+    padding: 30px;
+    color: #535353;
+}
+
+h5 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: #858585;
+}
+
+/* Second Header Block */
+.second-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/4778621/pexels-photo-4778621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+     background-repeat: no-repeat;
+        background-size: cover;
+    height: 428px;
+    display: flex;
+    align-items: center;
+}
+header h2 {
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #ffffff;
+}
+
+header p {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+header a {
+    font-size: 30px;
+    color: #535353;
+    text-decoration: none;
+
+    background: #F5F3F4;
+    padding: 16px 48px;
+    display: inline;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+
+/* Search Box */
+/* Search Box */
+.search-box {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    top: 0;
+    transition: 300ms;
+}
+
+.search-box.active {
+    top: 72px;
+}
+
+/*
+<div class="search-box" action="university.html">
+                        <input type="text" id="enter" placeholder="Search..." name="search">
+                        <button class="search-button" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+*/
+.search-box input {
+    background: #F5F3F4;
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    line-height: 37px;
+    border: 0;
+    padding: 12px 12px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #D3D3D3;
+    text-align: left;
+}
+
+.search-button {
+    position: relative;
+    left: 5px;
+    top: -40px;
+    vertical-align: top;
+    height: 40px;
+    border: 2px;
+    background: #F5F3F4;
+    color: #D3D3D3;
+    float: right;
+}
+
+
+/* University Page */
+header h3 {
+    color: #FFFFFF;
+    font-size: 100px;
+}
+
+form {
+    color: #535353;
+    font-size: 30px;
+    padding: 16px 48px;
+}
+
+.filter-options {
+width: 800px;
+/*height: 1000px;*/
+position: relative;
+left: 100px;
+}
+
+.drop-down {
+    color: #000000;
+    font-size: 30px;
+    border-color: #D3D3D3;
+    font-family: serif;
+    width: 500px;
+}
+
+
+.menu {
+position: absolute;
+left: -60px;
+}
+
+.uni-search {
+    font-size: 30px;
+    color: #535353;
+    text-decoration: none;
+    font-family: serif;
+
+    background: #F5F3F4;
+    padding: 16px 48px;
+    display: inline;
+    transition: 300ms;
+}
+
+/* University Results Page */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 30px;
+    color: #535353;
+}
+
+.back {
+    font-size: 30px;
+    color: #535353;
+    text-decoration: none;
+
+    background: #F5F3F4;
+    padding: 16px 48px;
+    transition: 300ms;
+    margin-top: 200px;
+}
+
+.external-links {
+font-size: 30px;
+color: #D3D3D3;
+text-decoration: none;
+border: 0px;
+background: #F5F3F4;
+padding: 16px 48px;
+transition: 300ms;
+margin-bottom: 50px;
+
+}
+
+.external-links a {
+text-decoration: none;
+font-family:serif;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+a {
+    color: #000000;
+}
+
+@media only screen and (max-width: 900px) {
+.nav-container {
+height: 210px;
+}
+.nav-items {
+display: block;
+margin-top: 145px;
+}
+.info-containers {
+padding-top: 180px;}
+
+header h3 {
+font-size:15vw;
+white-space: initial;
+}
+
+.drop-down {
+position: static;
+width:300px;}
+
+.filter-options {
+width: auto;
+position: static;
+display: block;
+left: 0px;
+}
+
+.menu {
+position: static;
+left: 0px;}
+
+
+table {
+margin-bottom: 50px;}
+
+th {
+font-size:3.7vw;
+}
+
+tr {
+font-size:3.7vw;
+}
+
+td {
+font-size:3.7vw;
+}
+
+
+.external-links a {
+font-size:5vw;
+margin-bottom: 5px;
+display: inline-block;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 10px;
+padding-right: 10px;
+text-align: center;
+}
+
+.nodata {
+position: relative;
+top: -50px;
+}
+
+}

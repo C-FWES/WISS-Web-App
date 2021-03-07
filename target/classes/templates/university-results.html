@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-container">
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                &nbsp;&nbsp;WISS
+            </div>
+            <div class="filler">
+
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="university.html">University</a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">Courses</a>
+                    </li>
+
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="info-containers">
+<div class="header-container">
+    <div class="wrapper">
+        <header>
+            <div class="hero-content">
+                <h3>University Programs</h3>
+            </div>
+        </header>
+    </div>
+</div>
+</div>
+
+<a th:if="${sourcePageHTML.equals('explore')}" class="back" href="university.html">
+    Back
+</a>
+
+<a th:if="${sourcePageHTML.equals('search')}" class="back" href="index.html">
+    Back
+</a>
+
+
+<form action="/university-results" id="results">
+    <input type="hidden" name="program" th:value="${programHTML}"></input>
+    <input type="hidden" name="uni" th:value="${universityHTML}"></input>
+    <input type="hidden" name="location" th:value="${locationHTML}"></input>
+    <input type="hidden" name="tuitionfee" th:value="${tutionFeeHTML}"></input>
+    <input type="hidden" name="program_rank" th:value="${programRankHTML}"></input>
+    <input type="hidden" name="universityrank" th:value="${universityRankHTML}"></input>
+    <input type="hidden" name="orderBy" th:value="${orderByHTML}"></input>
+
+</form>
+
+
+<table class="database-items">
+    <tr>
+
+        <th th:if="${not #lists.isEmpty(outcomesHTML)}">University</th>
+        <th th:if="${not #lists.isEmpty(outcomesHTML)}"><a id="submit-form" href="#">Program</a></th>
+        <th th:if="${not #lists.isEmpty(outcomesHTML)}">Admission Grade Range</th>
+        <th th:if="${not #lists.isEmpty(outcomesHTML)}">Tuition Fee</th>
+        <th th:if="${not #lists.isEmpty(outcomesHTML)}">Location</th>
+        <!--            </div>-->
+        <!--            <div th:unless=${#lists.isEmpty(outcomesHTML)}">-->
+        <!--                <th>University</th>-->
+        <!--                <th><a id="submit-form1" href="#">Program</a></th>-->
+        <!--                <th>Admission Grade Range</th>-->
+        <!--            </div>-->
+    </tr>
+    <!--        <tr>-->
+    <!--          <td>University of Waterloo</td>-->
+    <!--          <td>Computer Science... see more</td>-->
+    <!--          <td>ENG4UO...etc.</td>-->
+    <!--        </tr>-->
+    <!--        <tr>-->
+    <!--          <td>Western</td>-->
+    <!--          <td>Business... see more</td>-->
+    <!--          <td>ENG4UO...etc.</td>-->
+    <!--        </tr>-->
+    <!--        <tr>-->
+    <!--          <td>University of Toronto</td>-->
+    <!--          <td>Engineering... see more</td>-->
+    <!--          <td>ENG4UO...etc.</td>-->
+    <!--        </tr>-->
+
+    <tr th:each="outcome : ${outcomesHTML}">
+        <td><span th:text="${outcome.university}"></span></td>
+
+
+        <td><span th:text="${outcome.program}"> </span> <a th:href=${outcome.moreInfo}>More Info</a></td>
+
+        <td><span th:text="${outcome.gradeRange}"> </span></td>
+
+        <td><span th:text="${outcome.tuitionFee}"> </span></td>
+
+        <td><span th:text="${outcome.city}"> </span></td>
+    </tr>
+
+
+</table>
+
+<script>
+        var form = document.getElementById("results");
+
+document.getElementById("submit-form").addEventListener("click", function () {
+  form.submit();
+});
+
+</script>
+
+<style>
+        /*No Data Found*/
+p {
+    font-size: 30px;
+    color: #000000;
+}
+
+</style>
+<p class="nodata" th:if="${#lists.isEmpty(outcomesHTML)}">No Data Found</p>
+
+<!--    <div class="moreinfo">-->
+<!--        <button type="button" class="collapsible">More Information</button>-->
+<!--        <div class="content">-->
+<!--            <table>-->
+<!--            <tr>-->
+<!--                <th>University</th>-->
+<!--                <th>Program</th>-->
+<!--                <th>Coop</th>-->
+<!--                <th>Tuition Fee</th>-->
+<!--                <th>Program Rank</th>-->
+<!--                <th>University Rank</th>-->
+<!--            </tr>-->
+<!--                <tr th:each="outcome : ${outcomesHTML}">-->
+<!--                    <td><span th:text="${outcome.university}"> </span></td>-->
+<!--&lt;!&ndash;                    <td><span th:text="${outcome.university}"> </span></td>&ndash;&gt;-->
+<!--                    <td><span th:text="${outcome.program}"> </span></td>-->
+<!--                    <td><span th:text="${outcome.coop}"> </span></td>-->
+<!--                    <td><span th:text="${outcome.tuitionFee}"> </span></td>-->
+<!--                    <td><span th:text="${outcome.programRank}"> </span></td>-->
+<!--                    <td><span th:text="${outcome.universityRank}"> </span></td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+
+</body>
+</html>
+      

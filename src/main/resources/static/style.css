@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+    margin:0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+body {
+    font-family: monospace;
+}
+
+/* Navigation */
+
+.nav-container {
+    background: #000000;
+    height: 71px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.filler {
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 30px;
+    color: #e7e7e7;
+    padding-left: 50px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: max-width;
+}
+
+.nav-items li a {
+    color: #e7e7e7;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* First Header Block */
+.header-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/6147276/pexels-photo-6147276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+    background-attachment:fixed;
+    height: 428px;
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 61px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+/*middle space*/
+.middle-space {
+    background-color: #ffffff;
+    height: 240px;
+}
+
+h4 {
+    font-size: 30px;
+    padding: 30px;
+    color: #535353;
+}
+
+h5 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: #858585;
+}
+
+/* Second Header Block */
+.second-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/4778621/pexels-photo-4778621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+    height: 428px;
+    display: flex;
+}
+header h2 {
+    font-size: 50px;
+    line-height: 61px;
+    color: #ffffff;
+}
+
+.home-p {
+    font-weight: 300;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #ffffff;
+
+        margin-bottom: 48px;
+}
+
+header a {
+    font-size: 30px;
+    color: #535353;
+    text-decoration: none;
+
+    background: #F5F3F4;
+    padding: 16px 48px;
+    display: inline;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+
+/* Search Box */
+.search-box {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    top: 0;
+    transition: 300ms;
+}
+
+.search-box.active {
+    top: 72px;
+}
+
+/*
+<div class="search-box" action="university.html">
+                        <input type="text" id="enter" placeholder="Search..." name="search">
+                        <button class="search-button" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+*/
+.search-box input {
+    background: #F5F3F4;
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    line-height: 37px;
+    border: 0;
+    padding: 12px 12px;
+    outline: none;
+    text-align: left;
+}
+
+.search-box input::placeholder {
+    color: #D3D3D3;
+    text-align: left;
+}
+
+.search-button {
+    position: relative;
+    left: 5px;
+    top: -40px;
+    vertical-align: top;
+    height: 40px;
+    border: 2px;
+    background: #F5F3F4;
+    color: #D3D3D3;
+    float: right;
+}
+
+/* University Page */
+header h3 {
+    color: #FFFFFF;
+    font-size: 75px;
+}
+
+form {
+    color: #535353;
+    font-size: 30px;
+    padding: 16px 48px;
+}
+
+.filter-options {
+width: 800px;
+/*height: 1000px;*/
+position: relative;
+left: 100px;
+}
+
+.drop-down {
+    color: #000000;
+    font-size: 30px;
+    border-color: #D3D3D3;
+    font-family: monospace;
+    width: 500px;
+}
+
+
+.menu {
+position: absolute;
+left: -140px;
+}
+
+a {
+    color: #000000;
+}
+
+/* University Results Page */
+.back {
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+    border: 1px black;
+    border-style: solid;
+    background: #FFFFFF;
+    padding: 16px 48px;
+    transition: 300ms;
+    margin-top: 200px;
+}
+
+.multi-button {
+  display: flex;
+  width: 100%;
+  padding: calc(var(--space) * 2);
+  color: white;
+
+  --border-size: 0.125rem;
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --space: 1rem;
+}
+
+.multi-button button {
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  padding:
+    calc(var(--space) / 1.125)
+    var(--space)
+    var(--space);
+  border: var(--border-size) solid black;
+  color: black;
+  background-color: white;
+  font-size: 1.5rem;
+  font-family: monospace;
+  transition: flex-grow var(--duration) var(--ease);
+}
+
+.multi-button button + button {
+  border-left: var(--border-size) solid black;
+  margin-left: calc(var(--border-size) * -1);
+}
+
+.multi-button button:hover,
+.multi-button button:focus {
+  flex-grow: 2;
+  color: white;
+  background-color: black;
+}
+
+h6 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 30px;
+    color: #535353;
+}
+
+/* divider */
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+table {
+    table-layout: fixed ; width: 90%;
+}
+
+th, td {
+    font-size: 18px;
+  }
+
+  .uni-search {
+      font-size: 30px;
+      color: #000000;
+      text-decoration: none;
+      font-family: monospace;
+
+      background: #FFFFFF;
+      padding: 16px 48px;
+      display: inline;
+      transition: 300ms;
+  }
+
+.quiztext {
+text-align: center;
+font-size: 30px;
+margin-bottom: 10px;
+}
+.quizp {
+text-align: center;}
+
+
+/*.filter-options { div
+  width: 800px;
+  /*height: 1000px;
+  position: relative;
+  left: 100px;
+  }
+
+  .drop-down { drop down
+      color: #000000;
+      font-size: 30px;
+      border-color: #D3D3D3;
+      font-family: monospace;
+      width: 500px;
+  }
+
+
+  .menu { label
+  position: absolute;
+  left: -140px;
+  }*/
+
+
+  .quiz {
+  width: 1200px;
+  position: relative; right: -150px;}
+
+  .drop-downquiz {
+position: relative; right: -430px; top: -5px;}
+
+
+  .menuquiz {
+  position: absolute;
+  left: -140px;
+  }
+
+
+
+
+
+
+
+  /*
+  Phone Version*/
+  @media only screen and (max-width: 900px) {
+  .nav-container {
+  height: 210px;
+  }
+  .nav-items {
+  display: block;
+  margin-top: 120px;
+  }
+  .info-containers {
+  padding-top: 180px;
+  background-repeat: no-repeat;}
+
+  header h3 {
+  font-size:15vw;
+  white-space: initial;
+  }
+
+  .drop-down {
+  position: static;
+  width:300px;}
+
+  .filter-options {
+  width: auto;
+  position: static;
+  display: block;
+  left: 0px;
+  }
+
+  .menu {
+  position: static;
+  left: 0px;}
+
+
+  table {
+  margin-bottom: 50px;}
+
+  th {
+  font-size:2.7vw;
+  }
+
+  tr {
+  font-size:2.7vw;
+  }
+
+  td {
+  font-size:2.7vw;
+  }
+
+
+  .external-links a {
+  font-size:5vw;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  }
+
+  .nodata {
+  position: relative;
+  top: -50px;
+  }
+
+  nav .logo {
+      font-weight: bold;
+      font-size: 30px;
+      color: #e7e7e7;
+      padding-left: 20px;
+  }
+
+  }
