@@ -13,7 +13,9 @@ Our team for this project was composed of 5 members:
 Project Introduction: https://www.youtube.com/watch?v=I_VqjWfVA4c
 This competition was for students to develop a knowledge base which contained details about Ontario universities and programs/courses. The competition was looking for students to come up with creative ways to adress the needs of WISS. There was a preliminary qualifying round for the finals, and in the final there would be four final teams in a final competition. Our team was the first to make the finals, but we finished second in the final round. 
 
+# Our final presentation
+https://www.youtube.com/watch?v=qKJwMjcMT_w
+
 # Thanks to: 
-* My team for giving me the chance to join after my original team dropped out
 * Our teammates for their superb cooperation and dedication, making the development process smooth
 * WISS and Talentmaker for giving this opportunity to gain experience and learn skills
